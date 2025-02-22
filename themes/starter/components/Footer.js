@@ -131,14 +131,14 @@ export const Footer = props => {
               </div>
               <div className='w-full px-4 md:w-1/3 lg:w-1/2'>
                 <div className='my-1 flex justify-center md:justify-end'>
-                  <p className='text-base text-gray-7'>
-                    Designed and Developed by
+                  <p className='text-base text-gray-7 whitespace-nowrap flex items-center'>
+                    Copyright 2018 - 2025 跳动科技. All Rights Reserved
                     <a
-                      href='https://github.com/tangly1024/NotionNext'
+                      href='https://beian.miit.gov.cn/'
                       rel='nofollow noopner noreferrer'
                       target='_blank'
-                      className='px-1 text-gray-1 hover:underline'>
-                      NotionNext {siteConfig('VERSION')}
+                      className='px-1 text-gray-1 hover:underline whitespace-nowrap'>
+                      桂ICP备2021003458号-9 
                     </a>
                   </p>
                 </div>

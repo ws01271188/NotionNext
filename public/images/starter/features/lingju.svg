@@ -1,0 +1,67 @@
+<svg width="300" height="300" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(128 128)">
+        <!-- 动态数据环：强化连接概念 -->
+        <circle r="108" 
+                stroke="url(#data_halo)" 
+                stroke-width="14"
+                stroke-dasharray="6 12"
+                stroke-linecap="round"
+                transform="rotate(-15)"/>
+
+        <!-- 智能核心：多层节点网络 -->
+        <g transform="scale(0.9)">
+            <!-- 三维网格基底 -->
+            <path d="M-60-60l60 60-60 60-60-60zM60-60l60 60-60 60-60-60z" 
+                  stroke="url(#matrix)" 
+                  stroke-width="2.5"
+                  stroke-opacity="0.3"/>
+            
+            <!-- 中心能量枢纽 -->
+            <g filter="url(#core_glow)">
+                <circle r="24" fill="url(#power_core)" />
+                <path d="M-18 0a18 18 0 0 1 36 0" 
+                      stroke="url(#pulse)" 
+                      stroke-width="8"
+                      stroke-linecap="round"/>
+            </g>
+
+            <!-- 神经元连接网络 -->
+            <g stroke="url(#neuron)" stroke-width="1.8">
+                <path d="M-40-40Q0-20 40-40M40-40Q20 0 40 40M40 40Q0 20-40 40M-40 40Q-20 0-40-40"/>
+                <circle cx="40" cy="40" r="3" fill="#85E0FF"/>
+                <circle cx="-40" cy="40" r="3" fill="#85E0FF"/>
+                <circle cx="40" cy="-40" r="3" fill="#85E0FF"/>
+                <circle cx="-40" cy="-40" r="3" fill="#85E0FF"/>
+            </g>
+        </g>
+    </g>
+
+    <defs>
+        <!-- 渐变系统升级 -->
+        <linearGradient id="data_halo" x1="-108" y1="0" x2="108" y2="0">
+            <stop stop-color="#5EE7FF"/><stop offset="1" stop-color="#6D8CFF"/>
+        </linearGradient>
+
+        <radialGradient id="power_core">
+            <stop offset="0%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#1D4ED8"/>
+        </radialGradient>
+
+        <linearGradient id="neuron">
+            <stop offset="0%" stop-color="#93C5FD"/><stop offset="100%" stop-color="#C7D2FE"/>
+        </linearGradient>
+
+        <linearGradient id="pulse">
+            <stop offset="0%" stop-color="#60A5FA"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+        </linearGradient>
+
+        <!-- 动态矩阵效果 -->
+        <linearGradient id="matrix" gradientTransform="rotate(45)">
+            <stop offset="0%" stop-color="#374151"/><stop offset="50%" stop-color="#4B5563"/><stop offset="100%" stop-color="#374151"/>
+        </linearGradient>
+
+        <!-- 光效增强 -->
+        <filter id="core_glow">
+            <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#3B82F6" flood-opacity="0.6"/>
+        </filter>
+    </defs>
+</svg>

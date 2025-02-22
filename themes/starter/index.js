@@ -15,6 +15,8 @@ import { Brand } from './components/Brand'
 import { Contact } from './components/Contact'
 import { FAQ } from './components/FAQ'
 import { Features } from './components/Features'
+import { Services } from './components/Services'
+import { Solutions } from './components/Solutions'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
@@ -40,6 +42,7 @@ import SearchInput from './components/SearchInput'
 import { SignInForm } from './components/SignInForm'
 import { SignUpForm } from './components/SignUpForm'
 import { SVG404 } from './components/svg/SVG404'
+import { AITutorials } from './components/AITutorials'
 
 /**
  * 布局框架
@@ -97,6 +100,12 @@ const LayoutIndex = props => {
       {siteConfig('STARTER_BRANDS_ENABLE', true, CONFIG) && <Brand />}
       {/* 产品特性 */}
       {siteConfig('STARTER_FEATURE_ENABLE', true, CONFIG) && <Features />}
+      {/* 服务 */}
+      {siteConfig('STARTER_SERVICES_ENABLE', true, CONFIG) && <Services />}
+      {/* 解决方案 */}
+      {siteConfig('STARTER_SOLUTIONS_ENABLE', true, CONFIG) && <Solutions />}
+      {/* AI教程 */}
+      {siteConfig('STARTER_AI_TUTORIALS_ENABLE', true, CONFIG) && <AITutorials />}
       {/* 关于 */}
       {siteConfig('STARTER_ABOUT_ENABLE', true, CONFIG) && <About />}
       {/* 价格 */}

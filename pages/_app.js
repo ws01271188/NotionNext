@@ -24,6 +24,9 @@ const ClerkProvider = dynamic(() =>
   import('@clerk/nextjs').then(m => m.ClerkProvider)
 )
 
+// 增加事件监听器的最大数量限制
+require('events').EventEmitter.defaultMaxListeners = 15;
+
 /**
  * App挂载DOM 入口文件
  * @param {*} param0
