@@ -1,0 +1,12 @@
+
+    # *
+    User-agent: *
+    Allow: /
+  
+    # Host
+    Host: https://www.tiaotech.com
+  
+    # Sitemaps
+    Sitemap: https://www.tiaotech.com/sitemap.xml
+  
+    
